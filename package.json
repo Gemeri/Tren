@@ -1,0 +1,17 @@
+{
+  "name": "train-company-simulator",
+  "version": "1.0.0",
+  "description": "A 19th-century train company simulation game.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jeremy Fratini",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^6.7.0",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "keywords": []
+}
