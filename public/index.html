@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Company Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="main-menu" class="menu">
+    <h1>Train Company Simulator</h1>
+    <button id="play-button">Play</button>
+    <button id="load-button">Load Game</button>
+  </div>
+  <div id="game-screen" class="hidden">
+    <canvas id="game-canvas" width="900" height="900"></canvas>
+    <div id="controls">
+      <h2>Controls</h2>
+      <button id="build-track-button">Build Track</button>
+      <button id="buy-train-button">Buy Train</button>
+      <button id="upgrade-track-button">Upgrade Track</button>
+      <button id="bribe-state-button">Bribe State</button>
+      <button id="take-loan-button">Take Loan</button>
+      <button id="pay-loan-button">Pay Loan Early</button>
+      <button id="save-game-button">Save Game</button>
+      
+      <h3>Workers Pay %</h3>
+      <input type="range" id="workers-pay-slider" min="10" max="100" value="50">
+      <span id="workers-pay-value">50%</span>
+      
+      <h3>Political Affiliation</h3>
+      <select id="political-affiliation">
+        <option value="neutral">Neutral</option>
+        <option value="red">Red Party</option>
+        <option value="blue">Blue Party</option>
+      </select>
+      
+      <h3>Load Save File</h3>
+      <input type="file" id="load-save-file" accept=".json" style="display: none;">
+      <button id="load-save-button">Load Save Game</button>
+    </div>
+    <div id="info-panel">
+      <h2>Company Info</h2>
+      <p>Money: $<span id="money">100,000</span></p>
+      <p>Workers Pay: <span id="workers-pay">50%</span></p>
+      <p>Tax Rate: <span id="tax-rate">20%</span></p>
+      <p>Political Affiliation: <span id="political-affiliation-display">Neutral</span></p>
+      <p>Current Ruling Party: <span id="ruling-party">Neutral</span></p>
+      <h3>Tracks</h3>
+      <ul id="tracks-list"></ul>
+      <h3>Trains</h3>
+      <ul id="trains-list"></ul>
+      <h3>Loans</h3>
+      <ul id="loans-list"></ul>
+      
+      <h3>Company Finance</h3>
+      <div id="finance-details">
+      </div>
+    </div>
+  </div>
 
+  <div id="popup-modal" class="hidden">
+    <div id="popup-content">
+      <p id="popup-message"></p>
+      <div id="popup-input-container">
+      </div>
+      <button id="popup-ok-button">OK</button>
+    </div>
+  </div>
+
+  <div id="pause-overlay" class="hidden">
+    <h1>Paused</h1>
+  </div>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

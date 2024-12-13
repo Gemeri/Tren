@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f0f8ff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('assets/images/background.png');
+  background-size: cover;
+}
+
+.menu h1 {
+  font-size: 48px;
+  color: #2e8b57;
+  text-shadow: 2px 2px #ffebcd;
+}
+
+.menu button {
+  padding: 15px 30px;
+  margin: 20px;
+  font-size: 24px;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu button:hover {
+  background-color: #ff4500;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-screen {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#game-canvas {
+  flex: 3;
+  background-color: #ffffff;
+  border-right: 2px solid #2e8b57;
+  cursor: crosshair;
+}
+
+#controls, #info-panel {
+  flex: 1;
+  padding: 20px;
+  background-color: #e6e6fa;
+  overflow-y: auto;
+}
+
+#controls {
+  border-right: 2px solid #2e8b57;
+}
+
+#controls h2, #controls h3, #info-panel h2, #info-panel h3 {
+  color: #2e8b57;
+}
+
+#controls button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  background-color: #87cefa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#controls button:hover {
+  background-color: #00bfff;
+}
+
+#workers-pay-slider {
+  width: 100%;
+}
+
+#info-panel p, #info-panel li, #finance-details p, #finance-details li {
+  font-size: 18px;
+  color: #333333;
+}
+
+#tracks-list, #trains-list, #loans-list, #finance-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tracks-list li, #trains-list li, #loans-list li, #finance-details ul li {
+  background-color: #f5f5f5;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.finance-gains, .finance-losses {
+  margin-bottom: 10px;
+}
+
+.finance-gains li {
+  color: green;
+}
+
+.finance-losses li {
+  color: red;
+}
+
+#finance-details h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#finance-details p:last-child {
+  font-size: 20px;
+  color: #2e8b57;
+}
+
+/* Popup Modal Styles */
+#popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup-modal.hidden {
+  display: none;
+}
+
+#popup-content {
+  background-color: #fffacd;
+  border: 4px solid #ff4500;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+}
+
+#popup-content p {
+  font-size: 24px;
+  color: #333333;
+}
+
+#popup-content button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#popup-content button:hover {
+  background-color: #ff4500;
+}
+
+#popup-input-container {
+  margin-top: 20px;
+}
+
+#popup-input-container input {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ff6347;
+  border-radius: 8px;
+}
+
+#popup-input-container button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #87cefa;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#popup-input-container button:hover {
+  background-color: #00bfff;
+}
+
+#pause-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(169, 169, 169, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#pause-overlay.hidden {
+  display: none;
+}
+
+#pause-overlay h1 {
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 4px 4px #ff4500;
+}
