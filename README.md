@@ -160,7 +160,7 @@ Contributions are welcome! Follow these steps to contribute to **Train Company S
 2. **Clone the Forked Repository**
 
    ```
-   git clone https://github.com/your-username/train-company-simulator.git
+   git clone https://github.com/Gemeri/Tren.git
    ```
 
 3. **Create a New Branch**
