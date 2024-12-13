@@ -1,6 +1,6 @@
 # Train Company Simulator
 
-**Note:** This is a very simple and unfinished train game, despite the extensive readme script. did this because I was bored
+**Note:** This is a very simple and unfinished train game, despite the extensive readme script. did this because I was bored. i'll finish it later but it works fine now
 
 **Train Company Simulator** is a dynamic and engaging web-based simulation game where you take on the role of a budding entrepreneur aiming to build and manage your own railway empire. Strategically build tracks, purchase and upgrade trains, manage finances, and expand your network across diverse regions to become the top train company in Railtopia!
 
