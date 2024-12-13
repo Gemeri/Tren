@@ -1,7 +1,5 @@
 # Train Company Simulator
 
-![Train Company Simulator Logo](assets/images/logo.png)
-
 **Train Company Simulator** is a dynamic and engaging web-based simulation game where you take on the role of a budding entrepreneur aiming to build and manage your own railway empire. Strategically build tracks, purchase and upgrade trains, manage finances, and expand your network across diverse regions to become the top train company in Railtopia!
 
 ## Table of Contents
@@ -42,7 +40,7 @@ To run **Train Company Simulator** locally on your machine, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/train-company-simulator.git
+   git clone https://github.com/Gemeri/Tren.git
    ```
 
 2. **Navigate to the Project Directory**
