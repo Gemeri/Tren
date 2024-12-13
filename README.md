@@ -7,15 +7,12 @@
 ## Table of Contents
 
 - [Features](#features)
-- [Screenshots](#screenshots)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Game Mechanics](#game-mechanics)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Features
 
